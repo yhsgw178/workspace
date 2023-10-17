@@ -23,15 +23,13 @@ func main() {
 
 	// キーを逆順にリバースし、各配列も逆順にリバース
 	reversedData := make(map[string][]int32)
-	for _, key := range keys {
-		reversedArray := reverseIntSlice(data[key])
-		reversedData[key] = reversedArray
+	for i := range keys {
+
+		reversedData[keys[i]] = reverseIntSlice(data[keys[i]])
 	}
 
 	// 結果を表示
-	for i := range keys {
-		fmt.Println(keys[i], reversedData[keys[i]])
-	}
+	fmt.Println(reversedData[keys[0]])
 }
 
 func reverseIntSlice(slice []int32) []int32 {
