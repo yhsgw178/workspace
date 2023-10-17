@@ -1,7 +1,6 @@
 package main
 
 func main() {
-	// 60以下は一律30とする
 	item := make([]int64, 0, 10)
 	for i := 30; i <= 120; i += 15 {
 		item = append(item, int64(i))
