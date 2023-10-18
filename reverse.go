@@ -5,7 +5,7 @@ import (
 	"sort"
 )
 
-func main() {
+func reverse() {
 	data := map[string][]int32{
 		"a": {1, 2, 3},
 		"b": {4, 5, 6},
