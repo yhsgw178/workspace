@@ -28,7 +28,6 @@ func reverse() {
 		reversedData[keys[i]] = reverseIntSlice(data[keys[i]])
 	}
 
-	// 結果を表示
 	fmt.Println(reversedData[keys[0]])
 }
 
